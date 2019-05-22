@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <button id="printBtn">Print</button><br>
+        <iframe style="width: 500px;height:500px;" src="../web/viewer.html?file=../web/compressed.tracemonkey-pldi-09.pdf" id="frame"></iframe>
+        <script type="text/javascript">
+            document.getElementById('printBtn').addEventListener('click', function() {
+                document.getElementById('frame').contentWindow.print();
+            });
+        </script>
+    </body>
+
+</html>
